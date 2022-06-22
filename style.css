@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Open+Sans:wght@300;400;600;700;800&family=Varela&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+html::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+label {
+    font: 400 20px sans-serif;
+    color: #fff;
+}
+
+input {
+    background-color: #d3d3d3;
+    border:none;
+    transition: background-color .2s linear;
+    font: 400 20px sans-serif;
+    color: black;
+}
+
+input:focus {
+    background-color: transparent;
+    outline: none;
+    border-bottom: 2px solid black;
+    color: #fff;
+}
+
+body {
+    background-image: url(./slike/pexels-anna-shvets-6664126.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header > h1 {
+    font: 400 60px 'Joan', serif;
+    color: #fff;
+}
+
+header > h2 {
+    font: 400 40px sans-serif;
+    color: #fff;
+}
+
+.container > .row > .col-md-6 > h2 {
+    color: #fff;
+}
+
+.container > .row > .col-md-6 > h3 {
+    color: #fff;
+}
+
+.playing-card {
+    position: relative;
+    width: 280px;
+    height: 380px;
+    background-color: #f5f3f4;
+    border: 3px solid black;
+    border-radius: 3px;
+    background-image: url(./slike/1.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+
+button {
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.6)
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <title>Blackjack</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-uppercase text-center py-3">Blackjack</h1>
+      <h2 class="text-center"></h2>
+    </header>
+    <div class="container my-3 py-3">
+      <div class="row">
+        <div
+          class="col-md-6 d-flex flex-column align-items-center justify-content-center gap-3"
+        >
+          <form id="player1Form">
+            <label for="player1NameInput">Type player 1 name:</label>
+            <input type="text" id="player1NameInput" name="player1NameInput" />
+            <button type="button" class="confirmNameBtn" id="player1NameBtn">Confirm</button>
+          </form>
+          <h2 class="text-uppercase player-name" id="player1Name">Player 1</h2>
+          <h3 class="text-uppercase" id="player1Result">Result:</h3>
+          <div class="playing-card" id="player1Card">
+          </div>
+          <button class="pull-card-btn" id="pullCard1">New Card</button>
+          <button id="stop1" disabled>Stop</button>
+        </div>
+        <div
+          class="col-md-6 d-flex flex-column align-items-center justify-content-center gap-3"
+        >
+          <form id="player2Form">
+            <label for="player2NameInput">Type player 2 name:</label>
+            <input type="text" id="player2NameInput" name="player2NameInput" />
+            <button type="button" class="confirmNameBtn" id="player2NameBtn">Confirm</button>
+          </form>
+          <h2 class="text-uppercase player-name" id="player2Name">Player 2</h2>
+          <h3 class="text-uppercase" id="player2Result">Result:</h3>
+          <div class="playing-card" id="player2Card">
+          </div>
+          <button class="pull-card-btn" id="pullCard2" disabled>New Card</button>
+          <button id="stop2" disabled>Stop</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
